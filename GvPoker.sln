@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GvPokerEvaluator", "GvPokerEvaluator\GvPokerEvaluator.csproj", "{0BA22EF1-1F43-40F6-A9AC-C10896789F64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGvPokerEvaluator", "TestGvPokerEvaluator\TestGvPokerEvaluator.csproj", "{DE8CAA37-9898-477D-A744-09B94C889FB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameRunner", "GameRunner\GameRunner.csproj", "{6D989831-1B70-457B-B3ED-5E1E809D6F25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BA22EF1-1F43-40F6-A9AC-C10896789F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BA22EF1-1F43-40F6-A9AC-C10896789F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BA22EF1-1F43-40F6-A9AC-C10896789F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BA22EF1-1F43-40F6-A9AC-C10896789F64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE8CAA37-9898-477D-A744-09B94C889FB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8CAA37-9898-477D-A744-09B94C889FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8CAA37-9898-477D-A744-09B94C889FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8CAA37-9898-477D-A744-09B94C889FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D989831-1B70-457B-B3ED-5E1E809D6F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D989831-1B70-457B-B3ED-5E1E809D6F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D989831-1B70-457B-B3ED-5E1E809D6F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D989831-1B70-457B-B3ED-5E1E809D6F25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
