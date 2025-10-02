@@ -1,6 +1,4 @@
-using System.Reflection;
-
-namespace GvPokerEvaluator;
+namespace GvPokerEvaluator.Models;
 
 public enum Suit { Spades, Clubs, Diamonds, Hearts }
 
@@ -25,6 +23,7 @@ public record Card (Suit Suit, Rank Rank) : IComparable<Card> {
     
     public override string ToString() => $"{Rank} of {Suit}";
 
+    // This is fairly simple comparison so keeping in model instead of adding comparer service
     public int CompareTo(Card? other)
     {
         if (other is null)
