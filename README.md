@@ -66,10 +66,40 @@ For extended poker rules see:
 
 # Implementation
 
-# Assumptions 
+A simplified .NET 9 poker evaluator that builds a standard deck, deals five-card hands, ranks them, and reports the winner. The solution is split into a reusable hand-evaluation library, a console runner, and xUnit tests.
 
-- cards in the hands should be unique (in example 2 Bob and Sally both have 4S, these hands would be rejected)
+## Solution Structure
+- `GvPokerEvaluator/` core models (`Card`, `PokerHand`) plus services for shuffling, ranking, and comparing hands.
+- `GameRunner/` console host that wires up services, deals hands to named players, and logs round results.
+- `TestGvPokerEvaluator/`  xUnit test suite covering deck integrity, hand ranking, and winner resolution rules.
+
+## Getting Started
+1. Install the .NET 9 SDK.
+2. Restore and build the solution:
+   ```
+   dotnet restore
+   dotnet build
+   ```
+
+### Run the Sample Game
+```
+dotnet run --project GameRunner
+```
+
+### Run the Tests
+```
+dotnet test
+```
+
+## Implementation Notes and Assumptions
+- Supported rankings: `HighCard`, `OnePair`, `ThreeOfAKind`, and `Flush`.
+- Duplicated cards and uneven hand sizes are rejected (thows exception) before ranking winners.
+- The exmple unit test 1 and 2 are corrected: cards in the hands are not unique (example 2:  Bob and Sally both have 4S, these hands would be rejected)
+- Logging uses `Microsoft.Extensions.Logging` and writes round details to the console.
 - we are not going to validate correct hands (only if empty), such as 5 same cards, we are assuming deck is valid
 - we don't care if 4 of kind could lose to a higher 3 of a kind
 - Poker hand comparer: hands are always same length (will validate in caller but not in the comparer)
+
+
+
 
