@@ -2,6 +2,10 @@ using GvPokerEvaluator.Models;
 
 namespace GvPokerEvaluator.Services;
 
+/// <summary>
+/// Comparer
+/// Handles: Flush with high kicker, Three of a kind with high kicker, two of kind with high kicker and high card.
+/// </summary>
 public class PokerHandComparer : IComparer<PokerHand>
 {
     /// <summary>Compares this instance to a specified object and returns an indication of their relative values.

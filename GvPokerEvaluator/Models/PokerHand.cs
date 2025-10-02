@@ -1,3 +1,5 @@
+using System.Collections.Immutable;
+
 namespace GvPokerEvaluator.Models;
 
 public enum HandRank

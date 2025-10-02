@@ -24,6 +24,8 @@ public record Card (Suit Suit, Rank Rank) : IComparable<Card> {
     public override string ToString() => $"{Rank} of {Suit}";
 
     // This is fairly simple comparison so keeping in model instead of adding comparer service
+    // Important: in poker we don't compare suit, implemented it so the Card can be added to SortedSet
+    // for Poker, comparison should be: card.Rank.CompareTo(obj.Rank);
     public int CompareTo(Card? other)
     {
         if (other is null)
