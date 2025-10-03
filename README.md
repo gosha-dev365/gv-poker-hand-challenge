@@ -95,10 +95,9 @@ dotnet test
 - Supported rankings: `HighCard`, `OnePair`, `ThreeOfAKind`, and `Flush`.
 - Duplicated cards and uneven hand sizes are rejected (thows exception) before ranking winners.
 - The exmple unit test 1 and 2 are corrected: cards in the hands are not unique (example 2:  Bob and Sally both have 4S, these hands would be rejected)
-- Logging uses `Microsoft.Extensions.Logging` and writes round details to the console.
-- we are not going to validate correct hands (only if empty), such as 5 same cards, we are assuming deck is valid
+- Logging uses `Microsoft.Extensions.Logging` and writes details to the console.
 - we don't care if 4 of kind could lose to a higher 3 of a kind
-- Poker hand comparer: hands are always same length (will validate in caller but not in the comparer)
+- Poker hand comparer: we won't validate if hands are always same length, also won't validate if hand is invalid like 5 same cards of the same rank and suit (will validate in caller and in the deck but not in the comparer)
 
 
 
